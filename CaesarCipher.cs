@@ -65,7 +65,11 @@ namespace Crypto
         }
 
    
-
+        /// <summary>
+        /// Function to get encoded character.
+        /// </summary>
+        /// <param name="c">Single character of palin text.</param>
+        /// <returns>Encoded character</returns>
         private Char getEnc(Char c) {
             
             int index = Array.IndexOf(Alphabets, c);
@@ -73,6 +77,11 @@ namespace Crypto
             return Alphabets[index];
         }
 
+        /// <summary>
+        /// Function to get decoded character.
+        /// </summary>
+        /// <param name="c">Single character of cipher text.</param>
+        /// <returns>Decoded character.</returns>
         private Char getDec(Char c) { 
 
             int index = Array.IndexOf(Alphabets, c);
